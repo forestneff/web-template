@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "siteTitle": "AeroScale Solutions | Intelligent RevOps & SaaS Automation",
+    "metaDescription": "Full-stack RevOps, automated data pipelines, and enterprise-grade infrastructure engineered for high-growth venture-backed SaaS teams.",
+    "theme": {
+      "primaryColor": "#6366f1",
+      "accentColor": "#06b6d4",
+      "bgColor": "#0f172a",
+      "textColor": "#f8fafc"
+    }
+  },
+  "brand": {
+    "name": "AeroScale Solutions",
+    "tagline": "Full-stack RevOps & automated pipelines for venture-backed SaaS.",
+    "logoUrl": ""
+  },
+  "hero": {
+    "headline": "Scale Revenue Engine Velocity Without Adding Headcount",
+    "subheadline": "We architect resilient revenue operations, bi-directional CRM synchronizations, and automated pipeline intelligence so your go-to-market teams close deals faster.",
+    "ctaText": "Book Architecture Review",
+    "ctaUrl": "#contact",
+    "mediaUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+  },
+  "offerings": [
+    {
+      "title": "Unified Data Infrastructure",
+      "description": "Eliminate fragmented data silos with real-time bidirectional syncing across Salesforce, HubSpot, Stripe, and your modern data warehouse.",
+      "icon": "Layers"
+    },
+    {
+      "title": "Automated Lifecycle Pipelines",
+      "description": "End-to-end event-driven deal qualification, multi-touch lead routing, and instant executive SLA alerting powered by modern webhook architectures.",
+      "icon": "Workflow"
+    },
+    {
+      "title": "Enterprise Security & Governance",
+      "description": "Zero-trust access policies, SOC2-compliant logging, and role-based access orchestration to safeguard your critical customer telemetry.",
+      "icon": "ShieldCheck"
+    }
+  ],
+  "about": {
+    "headline": "Engineered by Operators, Trusted by High-Growth SaaS Leaders",
+    "bio": "Founded by veteran revenue engineers from hyper-growth scaleups, AeroScale delivers turn-key technical RevOps infrastructure. We bridge the critical chasm between marketing analytics, sales execution, and finance operations, empowering teams to operate with total forecast clarity and zero manual friction.",
+    "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "metrics": [
+      {
+        "label": "Data Pipeline Uptime",
+        "value": "99.8%"
+      },
+      {
+        "label": "Pipeline Velocity Acceleration",
+        "value": "3.4x"
+      },
+      {
+        "label": "Average Time-to-Deployment",
+        "value": "< 14 Days"
+      }
+    ]
+  },
+  "socialProof": [
+    {
+      "quote": "AeroScale transformed our chaotic sales stack into an automated growth engine. Our sales cycle dropped by 38% in the first quarter post-launch.",
+      "author": "Elena Rostova",
+      "role": "VP of Revenue Operations",
+      "company": "Vortex Cloud Inc."
+    },
+    {
+      "quote": "The cleanest RevOps architecture implementation I have seen in 15 years in B2B software. Flawless execution and zero downtime.",
+      "author": "Marcus Sterling",
+      "role": "Chief Commercial Officer",
+      "company": "Acuity AI"
+    }
+  ],
+  "contact": {
+    "type": "calendar",
+    "calendarEmbedUrl": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0sample",
+    "directEmail": "advisory@aeroscalesolutions.io",
+    "socialLinks": {
+      "LinkedIn": "https://linkedin.com/company/aeroscalesolutions",
+      "Twitter / X": "https://twitter.com/aeroscalesol",
+      "GitHub": "https://github.com/aeroscalesolutions"
+    }
+  }
+}
