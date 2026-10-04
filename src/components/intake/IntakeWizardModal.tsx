@@ -271,10 +271,10 @@ export const IntakeWizardModal: React.FC<IntakeWizardModalProps> = ({
             </div>
             <div>
               <h2 className="text-lg font-bold font-outfit text-white">
-                Client Intake & Onboarding
+                Build Your Custom Landing Page
               </h2>
               <p className="text-xs text-slate-400">
-                {isVariation ? 'Creating a new landing page variation' : 'Generate an authentic client landing page mockup'}
+                {isVariation ? 'Creating a new landing page variation' : 'Answer a few quick questions to generate your free interactive mockup'}
               </p>
             </div>
           </div>
@@ -330,10 +330,10 @@ export const IntakeWizardModal: React.FC<IntakeWizardModalProps> = ({
                   <UserCheck className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold font-outfit text-white">
-                  Step 1: Create or Connect Your Account
+                  Step 1: Connect Account & Claim Your Link
                 </h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Sign in with Google to claim your business subpage, store variations, and access your private consultation workspace.
+                  Sign in with Google so your custom landing page mockup is saved to your account and ready for consultation.
                 </p>
               </div>
 

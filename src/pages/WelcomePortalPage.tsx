@@ -6,7 +6,7 @@ import {
   Sliders,
   Download,
   ExternalLink,
-  Code2,
+  Layers,
   CheckCircle2,
   Cpu,
   PlusCircle,
@@ -61,14 +61,14 @@ export const WelcomePortalPage: React.FC = () => {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-500/20 border border-indigo-500/30 text-indigo-400 shadow-md">
-                <Code2 className="h-5 w-5" />
+                <Layers className="h-5 w-5" />
               </div>
-              <div>
+              <div className="flex flex-col">
                 <span className="font-outfit text-lg sm:text-xl font-bold tracking-tight text-white">
-                  HyperLaunch Engine
+                  Web Mockup Builder
                 </span>
-                <span className="hidden sm:inline-block ml-2 px-2 py-0.5 text-[10px] font-mono uppercase rounded bg-indigo-950 border border-indigo-800 text-indigo-300">
-                  {isAdmin ? 'Admin Console' : 'Welcome Portal'}
+                <span className="hidden sm:inline-block text-[11px] text-slate-400 font-medium">
+                  Custom Landing Pages for Your Business
                 </span>
               </div>
             </div>
@@ -79,7 +79,7 @@ export const WelcomePortalPage: React.FC = () => {
                 href="#mockup-vault"
                 className="hidden md:inline-block text-xs font-semibold text-slate-400 hover:text-slate-200 transition-colors"
               >
-                Subpages ({visibleClients.length})
+                Examples & Pages ({visibleClients.length})
               </a>
 
               <button
@@ -87,7 +87,7 @@ export const WelcomePortalPage: React.FC = () => {
                 className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-3.5 sm:px-4 py-2 text-xs sm:text-sm font-semibold text-white shadow-lg shadow-indigo-600/30 hover:bg-indigo-500 transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
                 <PlusCircle className="w-4 h-4" />
-                <span>Start Client Intake</span>
+                <span>Generate Free Mockup</span>
               </button>
 
               {/* User Google Login & Profile Widget */}
@@ -106,18 +106,18 @@ export const WelcomePortalPage: React.FC = () => {
         <Container className="relative z-10 text-center max-w-4xl mx-auto space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-xs sm:text-sm font-semibold tracking-wide">
             <Sparkles className="w-4 h-4 text-cyan-400" />
-            <span>Autonomous Web Architecture & Consultation Engine</span>
+            <span>High-Conversion Landing Page Generator</span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08] font-outfit">
-            From Client Intake to Live Landing Page in{' '}
+            Generate a Custom, High-Converting Landing Page for Your Business in{' '}
             <span className="bg-gradient-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
-              60 Seconds
+              Minutes
             </span>
           </h1>
 
-          <p className="text-slate-400 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            Welcome to the client onboarding portal. Complete the structured intake questionnaire to generate an instant, full-featured client landing page mockup stored at your dedicated business subpage.
+          <p className="text-slate-300 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
+            Answer a few simple questions about your services and target audience. We'll generate an interactive, fully responsive landing page mockup tailored to your brand—ready for an in-depth consultation with our web design team.
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -125,7 +125,7 @@ export const WelcomePortalPage: React.FC = () => {
               onClick={handleStartIntake}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-bold text-base text-white bg-indigo-600 shadow-xl shadow-indigo-600/30 hover:bg-indigo-500 hover:scale-[1.02] active:scale-[0.98] transition-all"
             >
-              <span>Launch Client Intake Form</span>
+              <span>Generate Free Live Mockup</span>
               <ArrowRight className="w-5 h-5" />
             </button>
 
@@ -133,77 +133,80 @@ export const WelcomePortalPage: React.FC = () => {
               href="#mockup-vault"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-semibold text-slate-300 border border-slate-800 bg-slate-900/60 hover:bg-slate-800 transition-colors text-sm"
             >
-              <span>View Workspace Subpages</span>
+              <span>See Real Examples</span>
               <span className="px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 text-xs font-mono">
                 {visibleClients.length}
               </span>
             </a>
           </div>
 
-          <div className="pt-8 flex flex-wrap items-center justify-center gap-8 text-xs text-slate-500 font-mono">
+          <div className="pt-8 flex flex-wrap items-center justify-center gap-8 text-xs text-slate-400 font-mono">
             <div className="flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>Google Account Claimed</span>
+              <span>100% Free Interactive Preview</span>
             </div>
             <div className="flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>Role-Gated Vault</span>
+              <span>Zero Coding Required</span>
             </div>
             <div className="flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>Instant Variations (v1, v2)</span>
+              <span>Tailored for Your Niche</span>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* How the Architecture Works */}
+      {/* How the Architecture Works (Outcome & Feature Framing) */}
       <section className="py-20 border-t border-slate-900 bg-slate-900/20">
         <Container>
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
             <h2 className="text-xs uppercase font-bold tracking-widest text-indigo-400 font-mono">
-              The Rapid Onboarding Lifecycle
+              Simple 3-Step Process
             </h2>
-            <p className="text-3xl font-bold text-white tracking-tight font-outfit">
-              Engineered for Frictionless Client Consultations
+            <p className="text-3xl sm:text-4xl font-bold text-white tracking-tight font-outfit">
+              From Idea to Interactive Web Mockup
+            </p>
+            <p className="text-sm text-slate-400">
+              No guesswork or lengthy back-and-forth. See your vision on screen immediately.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-sm space-y-4">
+            <div className="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-sm space-y-4 hover:border-slate-700 transition-colors">
               <div className="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center">
                 <Sliders className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-white">1. Account & Intake</h3>
+              <h3 className="text-lg font-bold text-white">1. Define Your Brand & Services</h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Connect your Google account and complete the 5-step intake questionnaire to claim your subpage, theme palette, and core capabilities.
+                Tell us your business name, core offerings, and target audience through a guided 2-minute questionnaire.
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-sm space-y-4">
+            <div className="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-sm space-y-4 hover:border-slate-700 transition-colors">
               <div className="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center">
                 <Cpu className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-white">2. Subpage Engine</h3>
+              <h3 className="text-lg font-bold text-white">2. Interactive Design Sandbox</h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Instantly mounts an authentic client landing page at <span className="font-mono text-cyan-300">/:businessname</span> with dynamic CSS variables and versioning.
+                Instantly see your content brought to life with curated color palettes, modern typography, and responsive layouts.
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-sm space-y-4">
+            <div className="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-sm space-y-4 hover:border-slate-700 transition-colors">
               <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center">
                 <Download className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-white">3. Consultation & Variations</h3>
+              <h3 className="text-lg font-bold text-white">3. Production-Ready Handoff</h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Review live with the client using the top consultation toolbar. Create instant variations, save version snapshots, and export <span className="font-mono text-emerald-300">clientConfig.json</span>.
+                Review your custom mockup with our design team during a consultation to finalize copy, polish details, and launch live.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* Role-Gated Dynamic Client Mockup Vault */}
+      {/* Real Websites Generated in Minutes Gallery */}
       <section id="mockup-vault" className="py-20 border-t border-slate-900">
         <Container>
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
@@ -222,17 +225,16 @@ export const WelcomePortalPage: React.FC = () => {
                 ) : (
                   <>
                     <Lock className="w-4 h-4 text-slate-500" />
-                    <span>Public Preview & Baseline Example</span>
+                    <span>Interactive Prototype Gallery</span>
                   </>
                 )}
               </div>
               <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight font-outfit mt-1">
-                {isAdmin
-                  ? `All Client Subpages (${visibleClients.length} Total)`
-                  : isAuthenticated
-                  ? `My Subpages & Baseline Example (${visibleClients.length})`
-                  : 'Platform Example Mockup'}
+                Real Websites Generated in Minutes
               </h2>
+              <p className="text-sm text-slate-400 mt-1">
+                Check out working prototypes across various industries and color palettes.
+              </p>
             </div>
 
             <div className="flex items-center gap-3">
@@ -241,7 +243,7 @@ export const WelcomePortalPage: React.FC = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 border border-slate-700 transition-colors"
               >
                 <PlusCircle className="w-4 h-4 text-indigo-400" />
-                <span>{isAuthenticated ? 'New Intake / Variation' : 'Start Intake'}</span>
+                <span>{isAuthenticated ? 'Build New Page / Variation' : 'Generate Your Page'}</span>
               </button>
             </div>
           </div>
@@ -251,10 +253,10 @@ export const WelcomePortalPage: React.FC = () => {
             <div className="mb-8 p-4 sm:p-5 rounded-2xl border border-indigo-500/20 bg-indigo-950/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
               <div className="space-y-1 text-center sm:text-left">
                 <span className="font-semibold text-white block">
-                  Want your own private business subpage?
+                  Ready to see your business on screen?
                 </span>
                 <span className="text-slate-400">
-                  Clients must create or connect an account with Google to claim their subpage and manage variations. Only admin accounts have visibility across all client subpages.
+                  Connect your Google account to claim your private subpage link and test different variations with our team.
                 </span>
               </div>
               <button
@@ -321,9 +323,9 @@ export const WelcomePortalPage: React.FC = () => {
 
                     {/* Meta stats */}
                     <div className="pt-2 flex flex-wrap items-center gap-3 text-[11px] text-slate-500 font-mono">
-                      <span>{client.config.offerings.length} Offerings</span>
+                      <span>{client.config.offerings.length} Core Services</span>
                       <span>•</span>
-                      <span>Active: {client.activeVersion || 'v1'}</span>
+                      <span>Version: {client.activeVersion || 'v1'}</span>
                       {isAdmin && client.ownerEmail && (
                         <>
                           <span>•</span>
@@ -341,7 +343,7 @@ export const WelcomePortalPage: React.FC = () => {
                       onClick={() => navigate(`/${client.slug}`)}
                       className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold text-slate-950 bg-indigo-400 hover:bg-indigo-300 transition-colors"
                     >
-                      <span>Open Mockup</span>
+                      <span>Preview Mockup</span>
                       <ExternalLink className="w-3.5 h-3.5" />
                     </button>
 
@@ -373,7 +375,7 @@ export const WelcomePortalPage: React.FC = () => {
       {/* Footer */}
       <footer className="border-t border-slate-900 py-10 text-center text-xs text-slate-500">
         <Container>
-          <p>© {new Date().getFullYear()} HyperLaunch Engine • Configuration-Driven Client Landing Platform</p>
+          <p>© {new Date().getFullYear()} Web Mockup Builder • Custom Landing Pages Designed to Convert</p>
         </Container>
       </footer>
 
